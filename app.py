@@ -292,4 +292,8 @@ def resume():
     return "<h1>Résumé Page</h1><p>This is the résumé page.</p>"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=False)
+    
+    port_env = int(os.environ.get("PORT", 8080))
+    debug_env = int(os.environ.get("DEBUG", False))
+
+    app.run(host="0.0.0.0", port=port_env, debug=debug_env)
