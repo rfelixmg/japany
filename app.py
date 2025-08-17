@@ -21,6 +21,10 @@ def about():
 def projects():
     return render_template("projects.html")
 
+@app.route("/demos")
+def demos():
+    return render_template("demos.html")
+
 @app.route("/publications")
 def publications():
     return render_template("publications.html")
