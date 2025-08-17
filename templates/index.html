@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}rafa felix, phd - Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>rafa felix, phd</h1>
+    <div class="subtitle">comp. scientist, climber, cyclist</div>
+    
+    <div class="description">
+        Welcome to my personal space. I'm passionate about computer science, 
+        outdoor adventures, and pushing boundaries both in technology and nature.
+    </div>
+    
+    <div class="cta-section">
+        <a href="{{ url_for('about') }}" class="cta-button">Learn More About Me</a>
+        <a href="{{ url_for('projects') }}" class="cta-button secondary">View My Projects</a>
+    </div>
+</div>
+{% endblock %}

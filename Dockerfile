@@ -8,5 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy code
 COPY . .
 
-EXPOSE $PORT
+EXPOSE 8080
 CMD ["python", "app.py"]

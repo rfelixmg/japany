@@ -1,0 +1,24 @@
+# 1. Build
+docker build -t asia-northeast2-docker.pkg.dev/green-device-469307-m0/jpweb:latest .
+
+# 2. Verify
+docker images
+
+# 3. Push
+docker push asia-northeast2-docker.pkg.dev/green-device-469307-m0/jpweb:latest
+
+
+asia-northeast2-docker.pkg.dev/green-device-469307-m0/jpweb:latest
+
+
+gcloud auth print-access-token | sudo docker login -u oauth2accesstoken --password-stdin https://asia-northeast2-docker.pkg.dev
+
+gcloud auth configure-docker asia-northeast2-docker.pkg.dev
+
+
+gcloud auth print-access-token | docker login \
+  -u oauth2accesstoken \
+  --password-stdin https://asia-northeast2-docker.pkg.dev
+
+
+  docker buildx build --platform=linux/amd64 -t jpweb-fe .

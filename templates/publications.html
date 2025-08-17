@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Publications - rafa felix, phd{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Publications</h1>
+    
+    <div class="publications-content">
+        <div class="publication-item">
+            <h3>Journal Publications</h3>
+            <div class="publication">
+                <h4>Title of Your Journal Paper</h4>
+                <p class="authors">R. Felix, Co-authors</p>
+                <p class="journal">Journal Name, Volume(Issue), Pages, Year</p>
+                <p class="doi">DOI: <a href="#">10.xxxx/xxxxx</a></p>
+            </div>
+        </div>
+        
+        <div class="publication-item">
+            <h3>Conference Papers</h3>
+            <div class="publication">
+                <h4>Title of Your Conference Paper</h4>
+                <p class="authors">R. Felix, Co-authors</p>
+                <p class="conference">Conference Name, Location, Year</p>
+                <p class="doi">DOI: <a href="#">10.xxxx/xxxxx</a></p>
+            </div>
+        </div>
+        
+        <div class="publication-item">
+            <h3>Preprints & Working Papers</h3>
+            <div class="publication">
+                <h4>Title of Your Working Paper</h4>
+                <p class="authors">R. Felix</p>
+                <p class="status">Working Paper, Year</p>
+                <p class="abstract">Brief abstract or description of the work in progress...</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
